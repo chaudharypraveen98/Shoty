@@ -1,0 +1,46 @@
+{% extends "music/base.html" %}
+{% block title %}Song Detail{% endblock %}
+
+{% block body %}
+    <section class="breadcumb-area bg-img bg-overlay" id="contact-bg">
+        <div class="bradcumbContent">
+            <p>{{album.album_title}}</p>
+            <h2>{{album.artist}}</h2>
+        </div>
+    </section>
+    <div class="flex-container" style="display:flex;margin:20px;">
+        <div>
+            <img src="{{album.album_logo}}" style="height:160px;width:150px;border-radius:8%;">
+        </div>
+        <div style="margin:10px;">
+            <h3 style="font-family:Pacifico">{{album.album_title}}</h3>
+            <h4 style="font-family:Satisfy">{{album.artist}}</h4>
+        </div>
+    </div>
+    
+    <div class="table" align="center">
+		<div class="col-md-6 ">
+			<table class="table table-hover table-striped table-borderless">
+				<thead>
+					<tr>
+						<td colspan="2" class="dark"><strong><center style="font-family:Pacifico">Songs List</center></strong></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="text-left">S.No</th>
+						<th class="text-left">Song Title</th>
+					</tr>
+					{% for song in song_list %}
+					<tr>
+						<td>{{ forloop.counter }}</td>
+						<td>{{ song.song_title }}</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+			</div>
+  {% if error_message %}
+    <p><strong>{{error_message}}</strong></p>
+  {% endif %}
+{% endblock %}

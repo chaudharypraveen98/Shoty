@@ -1,0 +1,24 @@
+{% extends "music/base.html" %}
+{% block title %}Add a new Album{% endblock %}
+{% block album_active %}active{% endblock %}
+{% block body %}
+    <section class="breadcumb-area bg-img bg-overlay" id="contact-bg">
+        <div class="bradcumbContent">
+            <p>MUSIC</p>
+            <h2>ADD ALBUM</h2>
+        </div>
+    </section>
+	<div class="container-fluid" id="add-form">
+		<div class="row">
+			<form action="" method="post" class="form-control">
+				{% csrf_token %}
+				{% include 'music/form-template.html' %}
+				<div class="form-group">
+					<div class="offset-sm-2 col-sm-10">
+						<button type="submit" class="btn btn-success">Submit</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+{% endblock %}	
