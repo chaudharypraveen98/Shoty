@@ -23,7 +23,7 @@
 	        <div class="flex-container">
 	            {% for album in all_albums %}
 	                <div class="card" style="width:330px;margin: 10px;">
-	                    <img src="{{album.album_logo}}" class="card-img-top" style="height:250px">
+	                    <img src="{{album.album_logo.url}}" class="card-img-top" style="height:250px">
 	                    <div class="card-body">
 	                        <h5 class="card-title">{{album.album_title}}</h5>
 	                        <p>{{album.artist}}</p>

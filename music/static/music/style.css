@@ -157,26 +157,26 @@ a:focus {
 }
 
 .album-heading > h2{
-  font-family: Pacifico;
+  font-family: 'Pacifico';
   text-align: center;
 }
 .album-heading > h4{
   font-family: 'Satisfy',cursive;
   text-align: center;
   }
-.flex-container > div {
-  width: 300px;
-  text-align: center;
-  line-height: 20px;
-  font-size: 20px;
-}
+
 .flex-container{
   display: flex;
   flex-wrap: wrap;
   margin-top:20px;
   justify-content:center;
 }
-
+.flex-container > div {
+  width: 300px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+}
 /* Tag dialogue */
 .tm-tag-line {
     margin-bottom: 20px;
