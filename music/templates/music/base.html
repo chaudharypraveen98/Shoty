@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}Shoty-Modern Music{% endblock %}</title>
     {% load staticfiles %}
+    <link rel="shortcut icon" type="image/png" href="{% static 'music/images/favicon.ico' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'music/style.css' %}">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
     <link rel="stylesheet" type="text/css" href="{% static 'music/css/audioplayer.css' %}">
@@ -31,7 +32,7 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                 	<li class="nav-item"><a href="{% url 'music:album-add' %}" class="nav-link"><i class="fas fa-plus"></i>Add Songs</a></li>
-                	<li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-power-off"></i>Logout</a></li>
+                	<li class="nav-item"><a href="{% url 'music:logout' %}" class="nav-link"><i class="fas fa-power-off"></i>Logout</a></li>
                 </ul>
             </div>
             <div id="mySidenav" class="sidenav">
