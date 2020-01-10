@@ -23,8 +23,8 @@
             <button type="button" class="navbar-toggler" data-toggle="collapse" onclick="openNav()"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="topNavBar">
                 <ul class="navbar-nav">
-                    <li class="nav-item my-2"><a href="{% url 'music:index' %}" class="nav-link"><i class="fas fa-compact-disc"></i>Albums</a></li>
-                    <li class="nav-item my-2"><a href="{% url 'music:index' %}" class="nav-link"><i class="fas fa-music"></i>Songs</a></li>
+                    <li class="nav-item my-2"><a href="#dist" class="nav-link"><i class="fas fa-compact-disc"></i>Albums</a></li>
+                    <li class="nav-item my-2"><a href="{% url 'music:music' %}" class="nav-link"><i class="fas fa-music"></i>Songs</a></li>
                     <form class="form-inline my-2 my-lg-0">
                   	    <input type="text" class="form-control-sm mr-sm-2 " placeholder="Search" >
                   	    <button type="submit" class="btn btn-success btn-sm my-2 mr-sm-0">Search</button>
@@ -78,7 +78,6 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="{% static 'music/js/active.js' %}"></script>
     <script src="{% static 'music/js/plugins.js' %}"></script>
     <script src="{% static 'music/js/wow.min.js' %}"></script>
     <script>

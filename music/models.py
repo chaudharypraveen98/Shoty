@@ -1,5 +1,9 @@
 from django.db import models
 from django.urls import reverse
+from django import forms
+from myfirstproject import settings
+from django.core.files.storage import FileSystemStorage
+
 
 class  Album(models.Model):
     artist = models.CharField(max_length=250)
@@ -15,7 +19,19 @@ class Song(models.Model):
     album = models.ForeignKey(Album,on_delete = models.CASCADE)
     file_type = models.CharField(max_length=10)
     song_title = models.CharField(max_length=250)
-    song_logo = models.CharField(max_length=1250)
+    song_logo = models.FileField(max_length=140, null=True)
+    song_link = models.FileField(upload_to='', default='see.mp3')
     is_favourite=models.BooleanField(default=False)
     def __str__(self):
       return (self.song_title)
+
+class Contact_Us(models.Model):
+    name = models.CharField(max_length=250)
+    email = models.EmailField(max_length=250)
+    subject = models.CharField(max_length=400)
+    message = models.CharField(max_length=2500)
+    class Meta:
+        verbose_name='message'
+        verbose_name_plural='messages'
+    def __str__(self):
+        return (self.name)

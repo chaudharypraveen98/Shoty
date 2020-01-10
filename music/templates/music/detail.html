@@ -4,8 +4,8 @@
 {% block body %}
     <section class="breadcumb-area bg-img bg-overlay" id="contact-bg">
         <div class="bradcumbContent">
-            <p>{{album.album_title}}</p>
-            <h2>{{album.artist}}</h2>
+            <p>SHOTY</p>
+            <h2>Play the World</h2>
         </div>
     </section>
     <div class="flex-container" style="display:flex;margin:20px;">
@@ -23,18 +23,22 @@
 			<table class="table table-hover table-striped table-borderless">
 				<thead>
 					<tr>
-						<td colspan="2" class="dark"><strong><center style="font-family:Pacifico">Songs List</center></strong></td>
+						<td colspan="3" class="dark"><strong><center style="font-family:Pacifico">Songs List</center></strong></td>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<th class="text-left">S.No</th>
 						<th class="text-left">Song Title</th>
+						<th class="text-left">Play</th>
 					</tr>
 					{% for song in song_list %}
 					<tr>
 						<td>{{ forloop.counter }}</td>
 						<td>{{ song.song_title }}</td>
+						<td><audio preload="auto" controls>
+                                <source src="{{song.song_link.url}}">
+                            </audio></td>
 					</tr>
 					{% endfor %}
 				</tbody>

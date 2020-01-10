@@ -8,7 +8,8 @@ but you may want to design your own structure of reusable views
 which suits your use case.'''
 
 from django.views import generic
-from.models import Album,Song
+from django.contrib import messages
+from.models import Album,Song,Contact_Us
 from django.views.generic.edit import CreateView,UpdateView,DeleteView #for editing the data
 from django.urls import reverse_lazy
 from django.contrib.auth import authenticate,login,logout
@@ -17,13 +18,25 @@ from django.views.generic import View,FormView
 from .forms import UserForm
 from django.contrib.auth.models import User
 from .login import LoginForm
+from myfirstproject.settings import EMAIL_HOST_USER
+from django.core.mail import send_mail
+from django.views.generic.base import TemplateView
 
 class IndexView(generic.ListView):
-  model = Album
   template_name = "music/index.html"
   context_object_name = "all_albums"
+  success_url = "music/index.html"
   def get_queryset(self):
     return Album.objects.all()
+  def post(self,request):
+    name = request.POST.get("name")
+    email = request.POST.get("email")
+    subject = request.POST.get("subject")
+    message = request.POST.get("message")
+    Contact_Us(name=name,email=email,subject=subject,message=message).save()
+    send_mail("Thank you for your valuable feedback","we are hoping to look ahead of your problem",EMAIL_HOST_USER,[email],fail_silently=False)
+    messages.success(request, 'Form submission successful')
+    return redirect('music:index')
 
 class DetailView(generic.DetailView):
   model = Album
@@ -31,6 +44,16 @@ class DetailView(generic.DetailView):
   def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['song_list'] = Song.objects.filter(album=self.object)
+        return context
+
+class Music(TemplateView):
+
+    template_name = "music/song.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['album'] = Album.objects.all()
+        context['song_list'] = Song.objects.all()
         return context
 class AlbumCreate(CreateView):
   model = Album
@@ -94,7 +117,6 @@ class LoginView(FormView):
         login(request,user)
         return redirect('music:index')
       print(user)
-      print("nooooooo")
     return render(request,self.template_name,{"form":form})
 
 def logout_view(request):
