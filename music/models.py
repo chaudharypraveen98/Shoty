@@ -9,7 +9,7 @@ class  Album(models.Model):
     def get_absolute_url(self):
         return reverse ('music:detail',kwargs={'pk':self.pk})
     def __str__(self):
-        return (self.album_title+"-"+self.artist)
+        return f"{self.album_title}{self.artist}"
 
 class Song(models.Model):
     album = models.ForeignKey(Album,on_delete = models.CASCADE)
@@ -18,4 +18,4 @@ class Song(models.Model):
     song_logo = models.CharField(max_length=1250)
     is_favourite=models.BooleanField(default=False)
     def __str__(self):
-      return (self.song_title)
+      return f"{self.song_title}"
