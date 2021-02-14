@@ -7,7 +7,7 @@
             <h2>UNLEASH YOUR POWER</h2>
         </div>
     </section>
-	<div class="container-fluid" id="add-form">
+	<div class="container-fluid">
 		<div class="row">
 			<form enctype="multipart/form-data" method="post" class="form-control">
 				{% csrf_token %}
@@ -19,5 +19,8 @@
 				</div>
 			</form>
 		</div>
+	</div>
+	<div class="login_link">
+		<h5><a href="{% url 'music:register' %}">Click here</a><span> to register</span></h5>
 	</div>
 {% endblock %}	

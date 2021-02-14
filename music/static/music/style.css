@@ -21,15 +21,6 @@ border-radius:0;
   padding-bottom: 0;
   background-color: #212529;
 }
-.bg-img {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-.bg-overlay {
-  position: relative;
-  background-position: center center;
-  background-size: cover; }
-
 .section-heading {
   position: relative;
   z-index: 1;
@@ -165,6 +156,10 @@ a:focus {
   text-align: center;
   }
 
+.show {
+  display: flex !important;
+}
+
 .flex-container{
   display: flex;
   flex-wrap: wrap;
@@ -172,11 +167,14 @@ a:focus {
   justify-content:center;
 }
 .flex-container > div {
+  display: none;
   width: 300px;
   text-align: center;
   line-height: 20px;
   font-size: 20px;
+  margin: 10px;
 }
+
 /* Tag dialogue */
 .tm-tag-line {
     margin-bottom: 20px;
@@ -352,14 +350,23 @@ a:focus {
       background-color: #fff;
       color: #000000; }
 /* detail view*/     
-#add-form{
-  margin-top: 80px;
-  margin-bottom: 600px;
-}
+
 #contact-bg{
   background-image: url("images/bg-img/breadcumb2.jpg");
 }
 /* :: 15.0 Breadcumb Area CSS */
+
+.bg-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.bg-overlay {
+  position: relative;
+  background-position: center center;
+  background-size: cover; 
+}
+
 .breadcumb-area {
   position: relative;
   z-index: 10;
@@ -442,8 +449,10 @@ a:focus {
   .sidenav a {font-size: 18px;}
 }
 
-.form-control{
-  border:0px!important;
+.container-fluid .row .form-control{
+  height: auto !important;
+  margin:30px 30px;
+  border:2px solid #ced4da !important;
 }
 
 .song{
@@ -475,6 +484,7 @@ a:focus {
 .single-event-area {
   position: relative;
   z-index: 1;
+  margin: 20px 20px;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms; }
   .single-event-area img {
@@ -535,3 +545,16 @@ a:focus {
       .single-event-area:hover .event-text .see-more-btn, .single-event-area:focus .event-text .see-more-btn {
         border-bottom-color: #000000;
         color: #000000; }
+
+.login_link{
+  text-align: center;
+}
+.event-title{
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

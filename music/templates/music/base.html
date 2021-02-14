@@ -17,6 +17,7 @@
 	<div id="loader">
 		<div class="preloader"></div>
 	</div>
+    {% block nav %}
     <nav class="navbar navbar-expand-sm  navbar-dark fixed-top" id="banner">
     	<div class="container-fluid" style="margin-top:0px;">
             <a class="navbar-brand" href="{% url 'music:index' %}">Shoty</a>
@@ -32,7 +33,14 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                 	<li class="nav-item"><a href="{% url 'music:album-add' %}" class="nav-link"><i class="fas fa-plus"></i>Add Songs</a></li>
-                	<li class="nav-item"><a href="{% url 'music:logout' %}" class="nav-link"><i class="fas fa-power-off"></i>Logout</a></li>
+                    <li class="nav-item"><h5 class="nav-link">
+                        {% if user.username %}
+                            Hi {{user.username}}</h5></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'music:logout' %}"><i class="fas fa-power-off"></i>Logout</a></div></li>
+                        {% else %}
+                            Hi Guest</h5></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'music:login' %}"><i class="fas fa-power-off"></i>Login/Signup</a></div></li>
+                        {% endif %}                    
                 </ul>
             </div>
             <div id="mySidenav" class="sidenav">
@@ -52,13 +60,14 @@
             </div>
 	    </div>
     </nav>
+    {% endblock %}
     {% block body %}
     {% endblock %}  
-    <footer class="footer-area">
+    <div class="footer-area">
         <div class="container">
             <div class="row d-flex flex-wrap align-items-center">
                 <div class="col-12 col-md-6">
-                    <a href="#"><img src="{% static 'music/images/bg-img/logo.png'%}"  style="width:130px;" alt=""></a>
+                    <a href="#"><img src="{% static 'music/images/bg-img/logo.png' %}"  style="width:130px;" alt=""></a>
                     <p class="copywrite-text"><a href="#"> All rights reserved | This template is made with <i class="far fa-heart" aria-hidden="true"></i> by <a href="ANONYMOUS" target="_blank">ANONYMOUS</a></p>
                 </div>
 
@@ -75,7 +84,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="{% static 'music/js/plugins.js' %}"></script>
