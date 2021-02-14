@@ -1,8 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:chaudharypraveen98" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c548aa4f-f900-497e-a051-2d902cdfcef2" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="c548aa4f-f900-497e-a051-2d902cdfcef2" name="Default Changelist" comment="updated readme.md">
+      <change afterPath="$PROJECT_DIR$/music/migrations/0010_auto_20200526_0524.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/see.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/media/see.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/see_aM0mfgC.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/see_nnHDAq1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/music.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/music/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/music/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/messages.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/music/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/static/music/js/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/music/static/music/js/plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/static/music/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/music/static/music/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/templates/music/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/templates/music/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/templates/music/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/templates/music/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/templates/music/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/templates/music/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/templates/music/registration_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/templates/music/registration_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/templates/music/song.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/templates/music/song.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/templates/music/user_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/templates/music/user_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/music/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/music/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myfirstproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myfirstproject/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,25 +57,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="ba195a23-8996-43c7-b1bf-d5830f4956c5" />
   <component name="ProjectId" id="1QhegfTNFAGKUl0Kt3pQq6DQ2N5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Users\bashi\Videos\Projects\Django Projects\myfirstproject" />
+    </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -45,11 +91,22 @@
       <workItem from="1572373276240" duration="747000" />
       <workItem from="1572374387091" duration="47000" />
       <workItem from="1572441619253" duration="690000" />
+      <workItem from="1585822761588" duration="99000" />
+      <workItem from="1613308419621" duration="3838000" />
+      <workItem from="1613331279183" duration="612000" />
     </task>
+    <task id="LOCAL-00001" summary="updated readme.md">
+      <created>1613311746565</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613311746565</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -57,11 +114,40 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="COLUMN_ORDER" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="chaudharypraveen98" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
             </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated readme.md" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="396" y="174" key="MultipleFileMergeDialog" timestamp="1613310752616">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="396" y="174" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1613310752616" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1613312292360">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1613312292360" />
+    <state x="546" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613310722078">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="546" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1613310722078" />
   </component>
 </project>

@@ -17,7 +17,7 @@
             <h4 style="font-family:Satisfy">{{album.artist}}</h4>
         </div>
     </div>
-    
+
     <div class="table" align="center">
 		<div class="col-md-6 ">
 			<table class="table table-hover table-striped table-borderless">
@@ -36,7 +36,7 @@
 					<tr>
 						<td>{{ forloop.counter }}</td>
 						<td>{{ song.song_title }}</td>
-						<td><audio preload="auto" controls>
+						<td><audio preload="auto" controls col-xs-3>
                                 <source src="{{song.song_link.url}}">
                             </audio></td>
 					</tr>
@@ -47,4 +47,7 @@
   {% if error_message %}
     <p><strong>{{error_message}}</strong></p>
   {% endif %}
+  <div class="create">
+  	<a href="{% url 'music:edit' album.id %}">add more</a>
+  </div>
 {% endblock %}
