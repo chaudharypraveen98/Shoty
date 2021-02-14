@@ -1,0 +1,23 @@
+{% extends "music/base.html" %}
+{% block title %}Login{% endblock %}
+{% block body %}
+    <section class="breadcumb-area bg-img bg-overlay" id="contact-bg">
+        <div class="bradcumbContent">
+            <p>LOGIN</p>
+            <h2>UNLEASH YOUR POWER</h2>
+        </div>
+    </section>
+	<div class="container-fluid" id="add-form">
+		<div class="row">
+			<form enctype="multipart/form-data" method="post" class="form-control">
+				{% csrf_token %}
+				{% include 'music/form-template.html' %}
+				<div class="form-group">
+					<div class="offset-sm-2 col-sm-10">
+						<button type="submit" class="btn btn-success" value="Submit">Submit</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+{% endblock %}	

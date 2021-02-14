@@ -1,0 +1,26 @@
+{% extends "music/base.html" %}
+{% block title %}Songs{% endblock %}
+{% block body %}
+<section class="breadcumb-area bg-img bg-overlay" id="contact-bg">
+        <div class="bradcumbContent">
+            <p>SHOTY</p>
+            <h2>Music everywhere</h2>
+        </div>
+    </section>
+    {% if song_list %}
+    	<div class="container-fluid edit">
+    	{% for i in song_list %}
+    			<div class="songdis">
+    			<img src="{{ i.song_logo.url }}" class="song" height="200">
+    				<div class="middle">
+						<h2 class="text-uppercase text-white">{{ i.song_title }}</h2>
+						<p>{{ i.album }}</p>
+						<audio preload="auto" controls>
+                          <source src="{{i.song_link.url}}">
+                          </audio>
+					</div>
+				</div>
+    	{% endfor %}
+    	</div>
+    {% endif %}
+{% endblock %}

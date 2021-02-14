@@ -6,7 +6,7 @@ $(document).on("scroll", function(){
 	}
 	else
 	{
-		$("#banner").removeClass("shrink");
+	  $("#banner").removeClass("shrink");
 	}
 });
 
@@ -19,11 +19,16 @@ window.addEventListener('load', function(){
 
 //right side navigation
 function openNav() {
-  document.getElementById("mySidenav").style.width = "330px";
+  var element = document.getElementById("mySidenav");
+  element.style.width = "330px";
+  element.classList.add("padding-50");
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  var element = document.getElementById("mySidenav");
+  element.style.width = "0px";
+  element.classList.remove("padding-50");
+
 }
 
 
