@@ -6,5 +6,8 @@ Music website based on the top on Django framework. It is a dynamic website with
 <img src="Shoty.PNG" alt="web preview">
 <br>
 
+#### Features:-
+1. Dynamic and Responsive Website
+
 **Note** :-
  All suggestion and changes are most welcomed. Please make pull request if you want to make some modification. 
